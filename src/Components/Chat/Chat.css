@@ -1,0 +1,101 @@
+.ChatPage{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ChatContainer{
+    background-color: white;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.Header{
+    background-color: crimson;
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vmax;
+}
+.Header>h2{
+    font-size: 2vmax;
+    color: white;
+}
+.Header a img{
+    width:1vmax;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.Header a img:hover{
+    transform: scale(1.5);
+}
+.ChatBox{
+    height: 80%;
+    box-sizing: border-box;
+}
+.Input{
+    height: 10%;
+    box-sizing: border-box;
+    display: flex;
+    border-top: 1px solid rgb(100, 95, 95);
+}
+#msgInput{
+    width: 85%;
+    outline: none;
+    border: none;
+    padding: 1.5vmax;
+}
+.SendBtn{
+    width: 15%;
+    border: none;
+    color: white;
+    background-color: crimson;
+}
+.SendBtn:hover{
+    background-color: rgb(161, 12, 42);
+}
+.SendBtn img{
+    width: 23%;
+    filter: brightness(100) invert();
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.SendBtn:hover img{
+    transform: translateX(40%);
+}
+
+@media (max-aspect-ratio:7/10) {
+    .ChatContainer{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .Header{
+        height: 10% !important;
+    }
+    .ChatBox{
+        height: 80%;
+    }
+    .Header h2{
+    font-size: 6vw !important;
+    }
+    .Header a img{
+        width:5vw !important;
+    }
+    .Input{
+        height: 10% !important;
+    }
+    #msgInput{
+        padding: 3vw !important;
+        font-size: 3vw !important;
+    }
+    .SendBtn img{
+        width: 5vw !important;
+    }
+}

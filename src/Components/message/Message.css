@@ -1,0 +1,52 @@
+.MessageBox{
+    padding: 0.6vmax;
+    margin: 0.6vmax;
+    clear: both;
+    border-radius: 1vmax !important;
+}
+.right{
+    float: right;
+    background-color: crimson;
+    color: white;
+    padding: 0.6vmax;
+    border-radius: 0.5vmax;
+    margin: 0 0.5vmax;
+}
+.left{
+    float: left;
+    background-color: rgb(42, 131, 42);
+    color: white;
+    margin: 0 0.5vmax;
+    padding: 0.6vmax;
+    border-radius: 0.9vmax;
+}
+@media (max-aspect-ratio:7/10){
+    .MessageBox{
+        padding: 2.8vw !important;
+        margin: 2.3vw !important;
+        font-size: 3.5vw !important;
+        border-radius: 2vw !important;
+    }
+}
+.Profile{
+    float: left;
+    background-color: rgb(48, 48, 122);
+    color: white;
+    font-size: 1.3vmax;
+    border-radius: 48%;
+    padding: 0.6vmax;
+    text-transform: uppercase;
+}
+.Profile2{
+    float: right !important;
+    background-color: rgb(165, 42, 124);
+    color: white;
+    font-size: 1.3vmax;
+    border-radius: 48%;
+    padding: 0.5vmax;
+}
+.center{
+    width: fit-content;
+    margin: 0.6vmax auto;
+    background-color: rgb(158, 149, 149);
+}

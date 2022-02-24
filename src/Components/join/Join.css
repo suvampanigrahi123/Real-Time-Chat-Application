@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bebas+Neue&family=Roboto:wght@100;400&family=Zen+Antique+Soft&family=Zen+Kurenaido&display=swap");
+.JoinPage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2b2a33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.JoinContainer {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.JoinContainer img {
+  width: 5vmax;
+}
+.JoinContainer h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5vmax;
+  border-bottom: 2px solid white;
+  width: 25vmax;
+  text-align: center;
+  padding: 1vmax;
+  box-sizing: border-box;
+}
+.JoinContainer input {
+  width: 25vmax;
+  padding: 1vmax;
+  border: none;
+  outline: none;
+  font-size: 1.2vmax;
+  margin: 2vmax;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.JoinContainer a button {
+  width: 10vmax;
+  box-sizing: border-box;
+  padding: 0.9vmax;
+  box-sizing: border-box;
+  background-color: crimson;
+  border: none;
+  cursor: pointer;
+  transition:  background-color 0.3s;
+  font-size: 1.5vmax;
+}
+.JoinContainer a button:hover{
+    background-color: rgb(143, 6, 34);
+}
+
+/* Media Query */
+@media (max-aspect-ratio:7/10){
+  .JoinPage {
+    display: flex !important;
+    justify-content: flex-start;
+  }
+  .JoinContainer{
+    margin-top: 25vw !important;
+      width: 100% !important;
+  }
+  .JoinContainer img{
+      width: 20vw !important;
+  }
+  .JoinContainer h1{
+    font-size: 3.5vmax !important;
+    width: 55vw !important;
+    padding: 3vmax !important;
+  }
+  .JoinContainer input {
+    width: 55vw !important;
+    padding: 1.8vmax !important;
+    font-size: 2.5vmax !important;
+    margin: 4vmax !important;
+  }
+  .JoinContainer a button {
+    width: 30vw !important;
+    padding: 1.5vmax !important;
+    font-size: 4vw !important;
+  }
+}
